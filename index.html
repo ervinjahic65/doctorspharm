@@ -303,19 +303,41 @@
 		<div class="container">
 			<div class="row">
 				<div class="contact-caption clearfix">
-					<div class="contact-heading text-center">
-						<h2>Contact Us</h2>
-					</div>
 					<div class="col-md-8 col-md-offset-1 contact-form">
-						<h3>leave us a message</h3>
+						<h3>Ready to take the next step or got some questions? Let's chat!</h3>
 
-						<form class="form">
-							<input class="name" type="text" placeholder="Name">
-							<input class="email" type="email" placeholder="Email">
-							<input class="phone" type="text" placeholder="Phone No:">
+						<form class="form" id="ajax-contact">
+							<input class="name" type="text" placeholder="Name" required>
+							<input class="email" type="email" placeholder="Email" required>
+							<input class="phone" type="text" placeholder="Phone No:" required>
+							
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>What type of doctor are you?</option>
+								<option value="1">GP Fellow / VR-GP</option>
+								<option value="2">GP Registrar / AGPT</option>
+								<option value="3">Medical Officer (PGY1 or 2)</option>
+							</select>
+							<br>
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>What shifts are you looking for?</option>
+								<option value="1">Home Visit</option>
+								<option value="2">Telehealth</option>
+							</select>
+							<br>
 							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 							<input class="submit-btn" type="submit" value="SUBMIT">
 						</form>
+						<script>
+							document.getElementById("ajax-contact").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("ajax-contact").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("ajax-contact").innerHTML = '<p style="font-size: 18px; color:white; font-weight: 700; text-align: center;">Thank you for booking an appointment with {Company}. We will confirm your appointment via text message shortly.</p>';
+							   }, 2000);
+							});
+						</script>
 					</div>
 				</div>
 			</div>
