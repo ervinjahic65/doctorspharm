@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="nl"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Doctor Spharm</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+</head>
+<body>
+	<p style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+		Advertentie
+	</p>
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="files/logo.png" alt="Logo" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Schakel navigatie</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu active" href="#home">Home</a></li>
+					        <li><a class="menu" href="#service">onze diensten</a></li>
+					        <li style="border-right: 3px solid #3aca74;"><a class="menu" href="#team">ons team</a></li>
+							<li><a class="menu" href="about.html">over ons</a></li>
+					        <li><a class="menu" href="contact.html">contacteer ons</a></li>
+					      </ul>
+					    </div><!-- /navbar-collapse -->
+					  </div><!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- einde van header-sectie -->
+
+	<section class="slider" id="home">
+		<div class="container-fluid">
+			<div class="row">
+			    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="header-backup"></div>
+			        <!-- Wrapper for slides -->
+			        <div class="carousel-inner" role="listbox">
+			            <div class="item active">
+			            	<img src="files/slide-one.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Verdien maar liefst €140 voor elk persoonlijk bezoek of €80 voor elke telezorg sessie.</p>
+		               			<button onclick="goToForm()">Neem contact op</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-two.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Word lid van het beste team voor diensten buiten kantooruren.</p>
+		               			<button onclick="goToForm()">Neem contact op</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-three.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Voor directe, niet-spoedeisende medische hulp buiten reguliere uren, rekenen mensen op artsen zoals u voor huisbezoeken en telezorg.</p>
+		               			<button onclick="goToForm()">Neem contact op</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-four.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Hoogwaardige service</p>
+		               			<button onclick="goToForm()">Neem contact op</button>
+			                </div>
+			            </div>
+			        </div>
+			        <!-- Controls -->
+			        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			            <span class="sr-only">Vorige</span>
+			        </a>
+			        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			            <span class="sr-only">Volgende</span>
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</section><!-- einde van slider sectie -->
+
+	<!-- about section -->
+	<section class="about text-center" id="about">
+		<div class="container">
+			<div class="row">
+				<h2>over ons</h2>
+				<h4>Door u bij ons aan te sluiten, maakt u deel uit van een team dat niet alleen waarde hecht aan uw professionele groei en welzijn, maar ook een echt verschil maakt in het leven van patiënten die op tijd medische hulp nodig hebben buiten de reguliere kantooruren. U wordt in staat gesteld om hoogwaardige, patiëntgerichte zorg te bieden, wat bijdraagt aan betere gezondheidsuitkomsten en een hogere patiënttevredenheid.</h4>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail clearfix">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item1.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>C</h1>
+							</div>
+							<h3>Kinderspecialist</h3>
+							<p>Terug in de huisartsenpraktijk na een onderbreking? Doctor Spharm biedt flexibele werktijden zonder zorgen over een patiëntenlijst, zodat u gemakkelijk weer kunt instromen.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item2.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>W</h1>
+							</div>
+							<h3>Werkafspraken op maat</h3>
+							<p>Op zoek naar extra inkomen of een carrièreswitch? Wij bieden flexibele diensten – overdag, 's avonds en 's nachts, zowel korte als lange. Kies voor huisbezoeken, telezorg, of een combinatie, wat voor u het beste werkt.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item3.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>E</h1>
+							</div>
+							<h3>Ervaring in de huisartsenpraktijk vereist</h3>
+							<p>Dacht u aan de huisartsenpraktijk maar bent u onzeker? Werk als waarnemend huisarts buiten kantooruren met klinische ondersteuning, zodat u kunt ervaren of dit de juiste weg voor u is.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- einde van about sectie -->
+
+
+	<!-- service section starts here -->
+	<section class="service text-center" id="service">
+		<div class="container">
+			<div class="row">
+				<h2>onze diensten</h2>
+				<h4>Of u nu in opleiding bent, terugkeert naar de huisartsenpraktijk, of van carrière wisselt, wij bieden ondersteuning voor elke dienst die u draait.</h4>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="heart img-responsive" src="files/service1.png" alt="">
+							</div>
+						</div>
+						<h3>Opties speciaal voor u ontworpen</h3>
+						<p>Artsen hebben verschillende voorkeuren, en wij ook. Of u nu korte telezorgdiensten buiten kantooruren wilt, langere blokken van 8 uur telezorg, of liever dat wij het transport en de apparatuur verzorgen terwijl anderen hun eigen middelen meenemen – wij zijn volledig flexibel en staan klaar om aan uw behoeften te voldoen.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="brain img-responsive" src="files/service2.png" alt="">
+							</div>
+						</div>
+						<h3>Onze diensten worden gefactureerd</h3>
+						<p>Wij rekenen een gap fee, wat betekent dat u meer verdient. Met tal van patiënten die bereid zijn te betalen voor kwalitatieve telezorg en huisbezoeken, kunt u het dubbele of zelfs drievoudige verdienen per patiënt vergeleken met algemene facturering.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="knee img-responsive" src="files/service3.png" alt="">
+							</div>
+						</div>
+						<h3>Gezondheidszorg compliance</h3>
+						<p>Terwijl sommige diensten nog verouderde processen in de gezondheidszorg hanteren die terecht zorgen baren, stroomlijnt onze app de compliance. Het stelt u in staat uw eigen patiënten te triëren, grondig te documenteren en de correcte zorgcodes eenvoudig en efficiënt te kiezen.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="bone img-responsive" src="files/service4.png" alt="">
+							</div>
+						</div>
+						<h3>Controle over uw dienst</h3>
+						<p>Voor elke dienst bepaalt u of u huisbezoeken, telezorg of beide wilt doen, uw start- en eindtijden, het aantal patiënten dat u ziet en de gebieden die u wilt bestrijken. U kunt deze keuzes zelfs tijdens uw dienst aanpassen, zodat u altijd de controle behoudt en op tijd klaar bent.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- einde van service sectie -->
+
+	<section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="team-heading text-center">
+                    <h2>ons team</h2>
+                    <h4>Tijdens elke dienst is een senior huisarts slechts een telefoontje verwijderd, wanneer u hen nodig heeft.</h4>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member1.jpg" alt="member-1">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Arjan de Vries, MBBS</h3>
+                        <p>Toegewijde huisarts met een passie voor het bieden van toegankelijke gezondheidszorg via innovatieve diensten buiten kantooruren.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Karin van den Berg, MD</h3>
+                        <p>Ervaren in telezorg en huisbezoeken, toegewijd aan het leveren van zorg van hoge kwaliteit in een comfortabele omgeving voor patiënten.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member2.jpg" alt="member-2">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member3.jpg" alt="member-3">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Roel de Wit, DNB</h3>
+                        <p>Gefocust op het benutten van technologie om de patiëntenzorg te verbeteren en tijdige medische hulp te bieden buiten kantooruren.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Petra de Boer, MBBS</h3>
+                        <p>Toegewijd aan het ondersteunen van collega-huisartsen en het garanderen van naadloze patiëntenzorg tijdens elke dienst buiten kantooruren.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member4.jpg" alt="member-4">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member5.jpg" alt="member-5">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Arjan Jansen, MD</h3>
+                        <p>Gelooft in het bieden van flexibele en lonende mogelijkheden voor huisartsen om essentiële medische diensten buiten kantooruren te leveren.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Fatima van Dijk, MBBS</h3>
+                        <p>Passie voor het toegankelijk maken van kwaliteitsvolle gezondheidszorg voor patiënten wanneer zij deze het meest nodig hebben, via huisbezoeken en telezorg.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member6.jpg" alt="member-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- map section -->
+	<div class="api-map" id="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 map" id="map"></div>
+			</div>
+		</div>
+	</div><!-- einde van map sectie -->
+
+	<!-- contact section starts here -->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-caption clearfix">
+					<div class="col-md-8 col-md-offset-1 contact-form">
+						<h3>Klaar om de volgende stap te zetten of heb je vragen? Laten we praten!</h3>
+
+						<form class="form" id="ajax-contact">
+							<input class="name" type="text" placeholder="Naam" required>
+							<input class="email" type="email" placeholder="E-mail" required>
+							<input class="phone" type="text" placeholder="Telefoonnummer:" required>
+							
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>Wat voor dokter ben je?</option>
+								<option value="1">GP Fellow / VR-GP</option>
+								<option value="2">GP Registrar / AGPT</option>
+								<option value="3">Medical Officer (PGY1 of 2)</option>
+							</select>
+							<br>
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>Welke diensten zoek je?</option>
+								<option value="1">Huisbezoek</option>
+								<option value="2">Telezorg</option>
+							</select>
+							<br>
+							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Bericht"></textarea>
+							<input class="submit-btn" type="submit" value="VERZEND">
+						</form>
+						<script>
+							document.getElementById("ajax-contact").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("ajax-contact").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("ajax-contact").innerHTML = '<p style="font-size: 18px; color:white; font-weight: 700; text-align: center;">Bedankt voor het maken van een afspraak met Doctor Spharm. We bevestigen uw afspraak spoedig per sms.</p>';
+							   }, 2000);
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- einde van contact sectie -->
+
+	<section id="testimonial">
+		<div class="container">
+			<div class="heading">
+				<h2 style="text-align: center;">Veelgestelde vragen</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+					<div class="faq-accordion">
+						<div class="faq-item active">
+							<h3>Welke werktijden zijn beschikbaar bij Doctor Spharm?</h3>
+							<div class="faq-content" style="display: block;">
+								<p>Doctor Spharm biedt een scala aan flexibele opties, van persoonlijke zorg aan huis tot telezorg-sessies op afstand, of een mix van beide. U kunt kiezen voor dag-, avond- of nachtdiensten op diverse locaties.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>Hoeveel kan ik verdienen met Doctor Spharm?</h3>
+							<div class="faq-content">
+								<p>Verhoog uw inkomen aanzienlijk ten opzichte van standaarddiensten! Verdien tot €140 voor elk huisbezoek en €80 per telezorgafspraak. Onze private factureringsmethode verdubbelt of verdrievoudigt doorgaans wat u zou verdienen met algemene facturering.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>Wat voor ondersteuning wordt geboden tijdens mijn werk?</h3>
+							<div class="faq-content">
+								<p>U staat er nooit alleen voor. Onze ervaren senior huisartsen zijn 24/7 telefonisch bereikbaar voor ondersteuning. Bovendien kunnen we helpen met de benodigde apparatuur, transport en chauffeurs, afhankelijk van uw wensen.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>Kan ik mijn eigen werkschema bepalen?</h3>
+							<div class="faq-content">
+								<p>Absoluut! Ons gebruiksvriendelijke platform stelt u in staat om uw voorkeursdiensttijden, het aantal patiënten dat u ziet, de gebieden die u wilt bedienen en of u huisbezoeken, telezorg of beide wilt doen, zelf te bepalen.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>Welke kwalificaties heb ik nodig om mee te doen?</h3>
+							<div class="faq-content">
+								<p>U heeft een geldige medische licentie nodig. We verwelkomen zowel ervaren huisartsen als zij die nieuw zijn in de nazorg, en bieden training indien nodig.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>Hoe werkt het betalingsproces?</h3>
+							<div class="faq-content">
+								<p>Ons conforme private factureringssysteem, inclusief gap fees, zorgt voor betere verdiensten zonder ingewikkelde upcoding. U heeft volledige controle over uw factureringsbeslissingen.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer starts here -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy; Doctor Spharm 2025. Alle rechten voorbehouden</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<p>
+						Bedrijfsnummer 00943935 <br>
+						Adres: Lime St, London EC3M 7HR, VK <br>
+						Telefoonnummer: 01632 960189 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-para-2">
+					<a href="about.html">Over ons</a>
+					<a href="contact.html">Contacteer ons</a>
+					<a href="terms.html">Algemene voorwaarden</a>
+					<a href="privacy.html">Privacybeleid</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- script tags
+	============================================================= -->
+	<script>
+		function goToForm() {
+		  const form = document.getElementById('ajax-contact');
+		  if (form) {
+			form.scrollIntoView({ behavior: 'smooth' });
+		  }
+		}
+	</script>
+
+	<script src="files/jquery-2.1.1.js"></script>
+	<script src="files/smoothscroll.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/custom.js"></script>
+</body>
+
+</html>

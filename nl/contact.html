@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="nl"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neem contact op met Doctor Spharm voor medische diensten buiten reguliere uren">
+    <meta name="author" content="">
+	<title>Contacteer Ons | Doctor Spharm</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+
+    <style>
+        /* Voeg dit toe aan uw style.css bestand */
+
+        /* Algemeen layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Gebruik de hoogte van het viewport om volledige hoogte te garanderen */
+        }
+
+        /* Hoofdsectie voor content */
+        .contact-main-content {
+            flex: 1; /* Hiermee breidt de content zich uit zodat de footer naar beneden wordt gedrukt */
+            padding: 40px 0;
+        }
+
+        /* Formulier stijlen */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            height: 50px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        textarea.form-control {
+            height: auto;
+            min-height: 150px;
+        }
+
+        .btn-primary {
+            background-color: #3aca74;
+            border-color: #3aca74;
+            padding: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #286090;
+            border-color: #204d74;
+        }
+
+        /* Stijlen voor succesbericht */
+        #form p {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Laadanimatie */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsieve aanpassingen */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+	
+	<!-- ====================================================
+	header sectie -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="files/logo.png" alt="Logo" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					
+				</div>
+			</div>
+		</div>
+	</header> <!-- einde van header-sectie -->
+
+	<!-- contact sectie begint hier -->
+	<section class="contact-main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Contacteer Doctor Spharm</h1>
+				</div>
+				
+				<div class="col-md-12">
+					<div class="contact-form">
+						<h2>Stuur Ons Een Bericht</h2>
+						<form id="form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Uw naam" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Uw e-mail" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefoonnummer" required>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="message" name="message" rows="5" placeholder="Uw bericht" required></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-block" style="font-size: 18px;">Verstuur Bericht</button>
+							</div>
+						</form>
+                        <script>
+							document.getElementById("form").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Bedankt voor het boeken van een afspraak met Doctor Spharm. We bevestigen uw afspraak spoedig via sms.</p>';
+							   }, 2000);
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer sectie begint hier -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy; Doctor Spharm 2025. Alle rechten voorbehouden</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<p>
+						Bedrijfsnummer 00943935 <br>
+						Adres: Lime St, London EC3M 7HR, VK <br>
+						Telefoonnummer: 01632 960189 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-para-2">
+					<a href="about.html">Over ons</a>
+					<a href="contact.html">Contacteer ons</a>
+					<a href="terms.html">Algemene voorwaarden</a>
+					<a href="privacy.html">Privacybeleid</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- script tags
+	============================================================= -->
+	<script src="files/jquery-2.1.1.js"></script>
+	<script src="files/smoothscroll.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/custom.js"></script>
+</body>
+</html>
