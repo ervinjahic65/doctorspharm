@@ -360,7 +360,12 @@ li a.active {
 .single-service h3 {
     margin-top: 60px;
     color: #fff;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.single-service p {
+    color: #FFF;
+    font-size: 18px;
 }
 .service-img img.heart {
     left: 20%;
