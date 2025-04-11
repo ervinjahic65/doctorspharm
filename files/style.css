@@ -33,7 +33,7 @@ h2 {
 
 .top-header {
     background: #fff !important;
-    position: fixed;
+    position: static;
     width: 100%;
     z-index: 99999;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -41,11 +41,13 @@ h2 {
 }
 .header-backup {
     width: 20px;
-    height: 119px;
+    height: 0;
     background: transparent;
     margin: auto;
 }
 .top-header img.logo {
+    width: 160px;
+    height: auto;
     margin-bottom: 25px;
     margin-top: -15px;
     transition: all .5s ease 0s;
@@ -114,7 +116,7 @@ li a.active {
 }
 .carousel-caption h1 {
     font-size: 157px;
-    color: #000;
+    color: #3aca74;
     text-transform: uppercase;
     margin-bottom: 0;
 }
@@ -901,7 +903,10 @@ responsive area
         font-size: 18px;
         margin: 0 5px;
     }
-
+    .top-header img.logo {
+        width: 55px !important;
+        margin: 0 !important;
+    }
 }
 
 @media (max-width: 479px) {
