@@ -278,7 +278,7 @@ li a.active {
 /*service area*/
 
 .service {
-    background: url(../img/pattern.jpg);
+    background: url(./pattern.jpg);
     background-repeat: repeat-y;
     margin-top: 40px;
 }
@@ -554,7 +554,7 @@ li a.active {
     float: right;
     font-size: 24px;
     color: #fff;
-    background: url(../img/btn-bg.jpg);
+    background: url(./btn-bg.jpg);
     background-repeat: no-repeat;
     padding: 0;
     font-family: 'BenchNine', sans-serif;
