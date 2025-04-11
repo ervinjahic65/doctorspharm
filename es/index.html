@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Doctor Spharm</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+</head>
+<body>
+	<p style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+		Publicidad
+	</p>
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="files/logo.png" alt="Logo" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid nav-bar">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Cambiar navegación</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      
+					      <ul class="nav navbar-nav navbar-right">
+					        <li><a class="menu active" href="#home" >Inicio</a></li>
+					        <li><a class="menu" href="#service">servicios</a></li>
+					        <li style="border-right: 3px solid #3aca74;"><a class="menu" href="#team">equipo</a></li>
+							<li><a class="menu" href="about.html">sobre nosotros</a></li>
+					        <li><a class="menu" href="contact.html"> contáctenos</a></li>
+					      </ul>
+					    </div><!-- /navbar-collapse -->
+					  </div><!-- / .container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end of header area -->
+
+	<section class="slider" id="home">
+		<div class="container-fluid">
+			<div class="row">
+			    <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+					<div class="header-backup"></div>
+			        <!-- Wrapper for slides -->
+			        <div class="carousel-inner" role="listbox">
+			            <div class="item active">
+			            	<img src="files/slide-one.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Gana hasta $140 por cada visita en persona o $80 por cada sesión de telemedicina.</p>
+		               			<button onclick="goToForm()">Contáctanos</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-two.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Únete al mejor equipo de servicios fuera de horario.</p>
+		               			<button onclick="goToForm()">Contáctanos</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-three.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>Para recibir ayuda médica inmediata, no de emergencia, fuera del horario habitual, la gente confía en médicos como tú para visitas a domicilio y telemedicina.</p>
+		               			<button onclick="goToForm()">Contáctanos</button>
+			                </div>
+			            </div>
+			            <div class="item">
+			            	<img src="files/slide-four.jpg" alt="">
+			                <div class="carousel-caption">
+		               			<h1>Doctor Spharm</h1>
+		               			<p>servicio de alta calidad</p>
+		               			<button onclick="goToForm()">Contáctanos</button>
+			                </div>
+			            </div>
+			        </div>
+			        <!-- Controls -->
+			        <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+			            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			            <span class="sr-only">Anterior</span>
+			        </a>
+			        <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+			            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			            <span class="sr-only">Siguiente</span>
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</section><!-- end of slider section -->
+
+	<!-- about section -->
+	<section class="about text-center" id="about">
+		<div class="container">
+			<div class="row">
+				<h2>sobre nosotros</h2>
+				<h4>Al unirte a nosotros, formarás parte de un equipo que no solo valora tu crecimiento profesional y bienestar, sino que también marca una diferencia real en la vida de los pacientes que necesitan atención médica oportuna fuera del horario habitual de la clínica. Tendrás el poder de proporcionar una atención de alta calidad centrada en el paciente, contribuyendo a mejores resultados en la salud y una mayor satisfacción del paciente.</h4>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail clearfix">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item1.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>C</h1>
+							</div>
+							<h3>Especialista en pediatría</h3>
+							<p>¿Regresas a la práctica general después de un tiempo alejado? Doctor Spharm ofrece trabajos flexibles y sin la preocupación de tener una lista de pacientes, lo que lo hace ideal para reincorporarte poco a poco.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item2.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>W</h1>
+							</div>
+
+							<h3>Arreglos laborales adaptados a tus necesidades</h3>
+							<p>¿Buscas ingresos adicionales o un cambio de carrera? Ofrecemos turnos flexibles – de día, tarde y noche, tanto cortos como largos. Elige realizar visitas a domicilio, telemedicina o una combinación, lo que mejor se adapte a ti.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="single-about-detail">
+						<div class="about-img">
+							<img class="img-responsive" src="files/item3.jpg" alt="">
+						</div>
+						<div class="about-details">
+							<div class="pentagon-text">
+								<h1>E</h1>
+							</div>
+							<h3>Se requiere experiencia en práctica general</h3>
+							<p>¿Estás pensando en la práctica general, pero no estás seguro? El trabajo de guardia fuera del horario regular te permite experimentarlo de primera mano con apoyo clínico, ayudándote a decidir si es el camino correcto.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end of about section -->
+
+
+	<!-- service section starts here -->
+	<section class="service text-center" id="service">
+		<div class="container">
+			<div class="row">
+				<h2>nuestros servicios</h2>
+				<h4>Ya sea que estés en formación, volviendo a la práctica general, o cambiando de carrera, brindamos apoyo para cada turno que trabajes.</h4>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="heart img-responsive" src="files/service1.png" alt="">
+							</div>
+						</div>
+						<h3>Opciones diseñadas solo para ti</h3>
+						<p>Los médicos tienen diferentes preferencias, y nosotros también. Ya sea que prefieras turnos cortos de telemedicina después del horario regular, bloques de 8 horas de telemedicina, o que prefieras que nos encarguemos del transporte y el equipo mientras otros traen el suyo, somos totalmente flexibles y estamos aquí para apoyar tus necesidades.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="brain img-responsive" src="files/service2.png" alt="">
+							</div>
+						</div>
+						<h3>Nuestros servicios se facturan</h3>
+						<p>Cobramos una tarifa diferencial, lo que significa que ganas más. Con muchos pacientes dispuestos a pagar por telemedicina y visitas a domicilio de calidad, puedes ganar el doble o incluso el triple por paciente con Doctor Spharm en comparación con los servicios de facturación global.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="knee img-responsive" src="files/service3.png" alt="">
+							</div>
+						</div>
+						<h3>Cumplimiento en salud</h3>
+						<p>Mientras que algunos servicios todavía utilizan procesos de salud anticuados que han generado inquietud, nuestra aplicación agiliza el cumplimiento. Te permite clasificar a tus propios pacientes, documentar de forma exhaustiva, y elegir los códigos de salud correctos de manera fácil y eficiente.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="single-service">
+						<div class="single-service-img">
+							<div class="service-img">
+								<img class="bone img-responsive" src="files/service4.png" alt="">
+							</div>
+						</div>
+						<h3>Control de tu turno</h3>
+						<p>En cada turno, decides si realizarás visitas a domicilio, telemedicina o ambas, tus horarios de inicio y fin, la cantidad de pacientes que atenderás y las áreas que cubrirás. Incluso puedes ajustar estos detalles durante tu turno, para que siempre tengas el control y finalices a tiempo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end of service section -->
+
+	<section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="team-heading text-center">
+                    <h2>nuestro equipo</h2>
+                    <h4>Durante cada turno, un médico general senior está a solo una llamada telefónica, siempre que lo necesites.</h4>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member1.jpg" alt="member-1">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Juan Rodríguez, MBBS</h3>
+                        <p>Médico general dedicado con pasión por brindar atención médica accesible a través de servicios innovadores fuera del horario habitual.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dra. María González, MD</h3>
+                        <p>Experta en telemedicina y visitas a domicilio, comprometida a proporcionar atención de alta calidad en un entorno cómodo para los pacientes.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member2.jpg" alt="member-2">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member3.jpg" alt="member-3">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Carlos Martínez, DNB</h3>
+                        <p>Enfocado en aprovechar la tecnología para mejorar la atención al paciente y brindar asistencia médica oportuna fuera del horario regular.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dra. Ana López, MBBS</h3>
+                        <p>Comprometida con apoyar a otros médicos generales y garantizar una atención al paciente sin interrupciones en cada turno fuera de horario.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member4.jpg" alt="member-4">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member5.jpg" alt="member-5">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. José García, MD</h3>
+                        <p>Cree en brindar oportunidades flexibles y gratificantes para que los médicos generales ofrezcan servicios médicos esenciales fuera del horario habitual.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dra. Laura Sánchez, MBBS</h3>
+                        <p>Apasionada por hacer que la atención médica de calidad sea accesible para los pacientes cuando más la necesitan, a través de visitas a domicilio y telemedicina.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member6.jpg" alt="member-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- map section -->
+	<div class="api-map" id="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 map" id="map"></div>
+			</div>
+		</div>
+	</div><!-- end of map section -->
+
+	<!-- contact section starts here -->
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-caption clearfix">
+					<div class="col-md-8 col-md-offset-1 contact-form">
+						<h3>¿Listo para dar el siguiente paso o tienes preguntas? ¡Hablemos!</h3>
+
+						<form class="form" id="ajax-contact">
+							<input class="name" type="text" placeholder="Nombre" required>
+							<input class="email" type="email" placeholder="Correo electrónico" required>
+							<input class="phone" type="text" placeholder="Teléfono:" required>
+							
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>¿Qué tipo de médico eres?</option>
+								<option value="1">Médico General Senior / VR-GP</option>
+								<option value="2">Residente en Medicina General / AGPT</option>
+								<option value="3">Médico Oficial (PGY1 o 2)</option>
+							</select>
+							<br>
+							<select class="form-control" id="doctor-type" required>
+								<option value="" disabled selected>¿Qué turnos buscas?</option>
+								<option value="1">Visita a domicilio</option>
+								<option value="2">Telemedicina</option>
+							</select>
+							<br>
+							<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+							<input class="submit-btn" type="submit" value="ENVIAR">
+						</form>
+						<script>
+							document.getElementById("ajax-contact").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("ajax-contact").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("ajax-contact").innerHTML = '<p style="font-size: 18px; color:white; font-weight: 700; text-align: center;">Gracias por reservar una cita con Doctor Spharm. Confirmaremos tu cita por mensaje de texto en breve.</p>';
+							   }, 2000);
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- end of contact section -->
+
+	<section id="testimonial">
+		<div class="container">
+			<div class="heading">
+				<h2 style="text-align: center;">Preguntas Frecuentes</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+					<div class="faq-accordion">
+						<div class="faq-item active">
+							<h3>¿Qué tipos de horarios de trabajo están disponibles en Doctor Spharm?</h3>
+							<div class="faq-content" style="display: block;">
+								<p>Doctor Spharm ofrece una variedad de opciones flexibles, desde atención domiciliaria en persona hasta sesiones remotas de telemedicina, o una combinación de ambas. Puedes elegir turnos diurnos, vespertinos o nocturnos en diversas ubicaciones.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>¿Cuánto podría ganar con Doctor Spharm?</h3>
+							<div class="faq-content">
+								<p>¡Incrementa tus ingresos significativamente en comparación con los servicios estándar! Gana hasta $140 por cada visita a domicilio y $80 por cada cita de telemedicina. Nuestro sistema de facturación privada generalmente duplica o incluso triplica lo que ganarías con la facturación global.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>¿Qué tipo de apoyo se ofrece durante mi trabajo?</h3>
+							<div class="faq-content">
+								<p>Nunca estarás solo. Nuestros experimentados médicos generales senior están disponibles 24/7 por teléfono para brindarte apoyo. Además, podemos ayudar con el equipo necesario, el transporte y los conductores, según lo que necesites.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>¿Puedo gestionar mi propio horario de trabajo?</h3>
+							<div class="faq-content">
+								<p>¡Absolutamente! Nuestra plataforma fácil de usar te permite decidir tus horarios de turno preferidos, la cantidad de pacientes que atenderás, las áreas que deseas cubrir, y si quieres realizar visitas a domicilio, telemedicina o ambas.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>¿Qué calificaciones necesito para unirme?</h3>
+							<div class="faq-content">
+								<p>Necesitarás una licencia médica vigente. Damos la bienvenida tanto a médicos generales experimentados como a aquellos que son nuevos en la atención fuera de horario, y ofrecemos capacitación si la necesitas.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+						<div class="faq-item">
+							<h3>¿Cómo funciona el proceso de pago?</h3>
+							<div class="faq-content">
+								<p>Nuestro sistema de facturación privada, que incluye tarifas diferenciales, asegura mejores ingresos sin complicaciones en la codificación. Tienes control total sobre tus decisiones de facturación.</p>
+							</div>
+							<i class="fa fa-chevron-down"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer starts here -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy; Doctor Spharm 2025. Todos los derechos reservados</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<p>
+						CNPJ: 78.989.613/0001-90 <br>
+						Inscripción Estatal: 8324829-77 <br>
+						Dirección: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516 <br>
+						Número de teléfono: (75) 2871-8215 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-para-2">
+					<a href="about.html">Sobre Nosotros</a>
+					<a href="contact.html">Contáctenos</a>
+					<a href="terms.html">Términos y Condiciones</a>
+					<a href="privacy.html">Política de Privacidad</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- script tags
+	============================================================= -->
+	<script>
+		function goToForm() {
+		  const form = document.getElementById('ajax-contact');
+		  if (form) {
+			form.scrollIntoView({ behavior: 'smooth' });
+		  }
+		}
+	</script>
+
+	<script src="files/jquery-2.1.1.js"></script>
+	<script src="files/smoothscroll.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/custom.js"></script>
+</body>
+</html>
