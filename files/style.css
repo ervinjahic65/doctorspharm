@@ -653,6 +653,74 @@ li a.active {
     opacity: 1;
     background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, 0) 100%);
 }
+
+#testimonial {
+    margin-bottom: 50px;
+}
+
+/* FAQ Section Styles */
+.faq-accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 40px 20px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover h3 {
+    color: #3aca74;
+}
+
+.faq-content {
+    display: none;
+    padding-top: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-content p {
+    margin: 0;
+}
+
+.faq-item i.fa-chevron-down {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    transition: all 0.3s ease;
+    color: #3aca74;
+}
+
+/* Active state styles */
+.faq-item.active {
+    padding-bottom: 25px;
+}
+
+.faq-item.active h3 {
+    color: #3aca74;
+}
+
+.faq-item.active i.fa-chevron-down {
+    transform: translateX(5px) rotate(180deg);
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
 @media all and (transform-3d),
 (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,

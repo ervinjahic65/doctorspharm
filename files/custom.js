@@ -77,3 +77,29 @@ jQuery(document).ready(function () {
 
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const isActive = this.classList.contains('active');
+            const icon = this.querySelector('i.fa-chevron-down');
+            const content = this.querySelector('.faq-content');
+            
+            // Close all items first
+            faqItems.forEach(el => {
+                el.classList.remove('active');
+                el.querySelector('.faq-content').style.display = 'none';
+                el.querySelector('i.fa-chevron-down').style.transform = 'translateX(0) rotate(0)';
+            });
+            
+            // If clicked item wasn't active, open it
+            if (!isActive) {
+                this.classList.add('active');
+                content.style.display = 'block';
+                icon.style.transform = 'translateX(5px) rotate(180deg)';
+            }
+        });
+    });
+});
