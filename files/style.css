@@ -409,12 +409,14 @@ li a.active {
 }
 .person img {
     width: 100%;
+    min-height: 250px;
 }
 .person-detail {
     padding: 10px;
     background: #3aca74;
     position: relative;
     transition: all .7s ease 0s;
+    min-height: 250px;
     -webkit-transition: all .7s ease 0s;
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
