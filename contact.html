@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact {Company} for after-hours medical services">
+    <meta name="author" content="">
+	<title>Contact Us | {Company}</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+
+    <style>
+        /* Add this to your style.css file */
+
+        /* General layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Use viewport height to ensure full height */
+        }
+
+        /* Main content section */
+        .contact-main-content {
+            flex: 1; /* This makes the content expand to push footer down */
+            padding: 40px 0;
+        }
+
+        /* Form styles */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            height: 50px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        textarea.form-control {
+            height: auto;
+            min-height: 150px;
+        }
+
+        .btn-primary {
+            background-color: #3aca74;
+            border-color: #3aca74;
+            padding: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #286090;
+            border-color: #204d74;
+        }
+
+        /* Success message styles */
+        #form p {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Loading animation */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+	
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="#" alt="Logo" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					<nav class="navbar navbar-default">
+					 
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end of header area -->
+
+	<!-- contact section starts here -->
+	<section class="contact-main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Contact {Company}</h1>
+				</div>
+				
+				<div class="col-md-12">
+					<div class="contact-form">
+						<h2>Send Us a Message</h2>
+						<form id="form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-block" style="font-size: 18px;">Send Message</button>
+							</div>
+						</form>
+                        <script>
+							document.getElementById("form").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Thank you for booking an appointment with {Company}. We will confirm your appointment via text message shortly.</p>';
+							   }, 2000);
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer starts here -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy; {Company} 2025. All right reserved</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<p>
+						India / Philippines
+						CIN - U01631KA2010PTC096843 <br>
+						Address - 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, <br>
+						Santacruz East, Mumbai, Maharashtra 400055, India <br>
+						Phone - 0674 2702416 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-para-2">
+					<a href="about.html">About Us</a>
+					<a href="contact.html">Contact Us</a>
+					<a href="terms.html">Terms and Conditions</a>
+					<a href="privacy.html">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- script tags
+	============================================================= -->
+	<script src="files/jquery-2.1.1.js"></script>
+	<script src="files/smoothscroll.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/custom.js"></script>
+</body>
+</html>
