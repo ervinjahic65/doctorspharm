@@ -279,7 +279,6 @@ li a.active {
 
 .service {
     background: url(./pattern.jpg);
-    background-repeat: repeat-y;
     margin-top: 40px;
 }
 .service h2 {
@@ -551,7 +550,7 @@ li a.active {
 .contact-form input.submit-btn {
     width: 180px;
     height: 50px;
-    float: right;
+    float: left;
     font-size: 24px;
     color: #fff;
     background: url(./btn-bg.jpg);
@@ -580,7 +579,6 @@ li a.active {
     margin-top: 0px;
     left: 0;
     margin-top: -830px;
-    background: rgba(0, 0, 0, 0.51);
 }
 .contact-caption {
     margin-top: 120px;
@@ -592,13 +590,19 @@ li a.active {
     margin: 0;
     padding: 0;
 }
+.footer-para-2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 25px 0;
+}
 .footer p {
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
-    padding: 25px 0;
+    padding: 0;
 }
 .footer a i.fa {
     font-size: 24px;
@@ -612,6 +616,11 @@ li a.active {
     position: relative;
 }
 
+
+.footer-para-2 a {
+    font-size: 20px;
+    margin: 0 10px;
+}
 /*======================css for carousel=========================*/
 
 .carousel-fade .carousel-inner .item {
