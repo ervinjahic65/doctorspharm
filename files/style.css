@@ -36,6 +36,8 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 99999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
 }
 .header-backup {
     width: 20px;
@@ -890,6 +892,17 @@ responsive area
 }
 
 /* XS Portrait */
+
+@media (max-width: 767px) {
+    .about-main-content, .terms-main-content, .privacy-main-content, .contact-main-content {
+        padding-top: 100px !important;
+    }
+    .footer-para-2 a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+}
 
 @media (max-width: 479px) {
     .top-header img.logo {
