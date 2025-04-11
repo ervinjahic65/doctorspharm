@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Doctor Spharm pour des services médicaux en dehors des heures normales">
+    <meta name="author" content="">
+	<title>Contactez-nous | Doctor Spharm</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+
+    <style>
+        /* Ajoutez ceci à votre fichier style.css */
+
+        /* Disposition générale */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Utilise la hauteur de la fenêtre pour assurer une hauteur complète */
+        }
+
+        /* Section principale du contenu */
+        .contact-main-content {
+            flex: 1; /* Ceci permet au contenu de s'étendre pour pousser le pied de page vers le bas */
+            padding: 40px 0;
+        }
+
+        /* Styles de formulaire */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control {
+            height: 50px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        textarea.form-control {
+            height: auto;
+            min-height: 150px;
+        }
+
+        .btn-primary {
+            background-color: #3aca74;
+            border-color: #3aca74;
+            padding: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #286090;
+            border-color: #204d74;
+        }
+
+        /* Styles pour le message de succès */
+        #form p {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        /* Animation de chargement */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Ajustements réactifs */
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+	
+	<!-- ====================================================
+	header section -->
+	<header class="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-5 header-logo">
+					<br>
+					<a href="index.html"><img src="files/logo.png" alt="Logo" class="img-responsive logo"></a>
+				</div>
+
+				<div class="col-md-7">
+					
+				</div>
+			</div>
+		</div>
+	</header> <!-- fin de la section d'en-tête -->
+
+	<!-- Section principale de contact -->
+	<section class="contact-main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Contactez Doctor Spharm</h1>
+				</div>
+				
+				<div class="col-md-12">
+					<div class="contact-form">
+						<h2>Envoyez-nous un message</h2>
+						<form id="form">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" class="form-control" id="phone" name="phone" placeholder="Numéro de téléphone" required>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-block" style="font-size: 18px;">Envoyer le message</button>
+							</div>
+						</form>
+                        <script>
+							document.getElementById("form").addEventListener("submit", function (e) {
+							   e.preventDefault();
+							
+							   document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+							
+							   setTimeout(() => {
+								  document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Merci d\'avoir réservé un rendez-vous avec Doctor Spharm. Nous confirmerons votre rendez-vous par SMS sous peu.</p>';
+							   }, 2000);
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pied de page -->
+	<footer class="footer clearfix">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 footer-para">
+					<p>&copy; Doctor Spharm 2025. Tous droits réservés</p>
+				</div>
+				<div class="col-xs-6 text-right">
+					<p>
+						Numéro d'entreprise 00943935 <br>
+						Adresse : Lime St, London EC3M 7HR, Royaume-Uni <br>
+						Numéro de téléphone : 01632 960189 <br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 footer-para-2">
+					<a href="about.html">À propos</a>
+					<a href="contact.html">Contactez-nous</a>
+					<a href="terms.html">Conditions générales</a>
+					<a href="privacy.html">Politique de confidentialité</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="files/jquery-2.1.1.js"></script>
+	<script src="files/smoothscroll.js"></script>
+	<script src="files/bootstrap.min.js"></script>
+	<script src="files/custom.js"></script>
+</body>
+</html>
