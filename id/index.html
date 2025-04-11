@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Doctor Spharm</title>
+	<link rel="stylesheet" href="files/font-awesome.min.css">
+	<link rel="stylesheet" href="files/bootstrap.min.css">
+	<link rel="stylesheet" href="files/style.css">
+	<link rel="shortcut icon" href="files/favicon.png" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="files/modernizr.js"></script>
+</head>
+<body>
+    <p style="position: absolute; z-index: 99999999; left: 50%; transform: translateX(-50%); text-align: center; color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif;">
+        Iklan
+    </p>
+    <!-- ====================================================
+    header section -->
+    <header class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 header-logo">
+                    <br>
+                    <a href="index.html"><img src="files/logo.png" alt="Logo" class="img-responsive logo"></a>
+                </div>
+
+                <div class="col-md-7">
+                    <nav class="navbar navbar-default">
+                      <div class="container-fluid nav-bar">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigasi</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a class="menu active" href="#home" >Beranda</a></li>
+                            <li><a class="menu" href="#service">Layanan Kami</a></li>
+                            <li style="border-right: 3px solid #3aca74;"><a class="menu" href="#team">Tim Kami</a></li>
+                            <li><a class="menu" href="about.html">Tentang</a></li>
+                            <li><a class="menu" href="contact.html">Hubungi</a></li>
+                          </ul>
+                        </div><!-- /navbar-collapse -->
+                      </div><!-- / .container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header> <!-- end of header area -->
+
+    <section class="slider" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="carouselHacked" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="header-backup"></div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                        	<img src="files/slide-one.jpg" alt="">
+                            <div class="carousel-caption">
+                       			<h1>Doctor Spharm</h1>
+                       			<p>Dapatkan hingga IDR 2,618,000 untuk setiap kunjungan langsung atau IDR 1,496,000 untuk setiap sesi telehealth.</p>
+                       			<button onclick="goToForm()">Hubungi Kami</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                        	<img src="files/slide-two.jpg" alt="">
+                            <div class="carousel-caption">
+                       			<h1>Doctor Spharm</h1>
+                       			<p>Bergabunglah dengan tim layanan setelah jam kerja terbaik.</p>
+                       			<button onclick="goToForm()">Hubungi Kami</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                        	<img src="files/slide-three.jpg" alt="">
+                            <div class="carousel-caption">
+                       			<h1>Doctor Spharm</h1>
+                       			<p>Untuk bantuan medis segera yang bukan darurat di luar jam reguler, masyarakat mengandalkan dokter seperti Anda untuk kunjungan rumah dan telehealth.</p>
+                       			<button onclick="goToForm()">Hubungi Kami</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                        	<img src="files/slide-four.jpg" alt="">
+                            <div class="carousel-caption">
+                       			<h1>Doctor Spharm</h1>
+                       			<p>Layanan berkualitas tinggi</p>
+                       			<button onclick="goToForm()">Hubungi Kami</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carouselHacked" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Sebelumnya</span>
+                    </a>
+                    <a class="right carousel-control" href="#carouselHacked" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Berikutnya</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of slider section -->
+
+    <!-- about section -->
+    <section class="about text-center" id="about">
+        <div class="container">
+            <div class="row">
+                <h2>Tentang Kami</h2>
+                <h4>Dengan bergabung bersama kami, Anda akan menjadi bagian dari tim yang tidak hanya menghargai pertumbuhan profesional dan kesejahteraan Anda, tetapi juga memberikan dampak nyata dalam kehidupan pasien yang membutuhkan perhatian medis tepat waktu di luar jam klinik reguler. Anda akan diberdayakan untuk memberikan perawatan berkualitas tinggi yang berpusat pada pasien, berkontribusi pada hasil kesehatan yang lebih baik dan kepuasan pasien yang meningkat.</h4>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-about-detail clearfix">
+                        <div class="about-img">
+                            <img class="img-responsive" src="files/item1.jpg" alt="">
+                        </div>
+                        <div class="about-details">
+                            <div class="pentagon-text">
+                                <h1>C</h1>
+                            </div>
+                            <h3>Spesialis Anak</h3>
+                            <p>Kembali ke Praktik Umum setelah lama absen? Doctor Spharm menawarkan pekerjaan fleksibel dan tanpa kekhawatiran daftar pasien, menjadikannya cara ideal untuk kembali dengan mudah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-about-detail">
+                        <div class="about-img">
+                            <img class="img-responsive" src="files/item2.jpg" alt="">
+                        </div>
+                        <div class="about-details">
+                            <div class="pentagon-text">
+                                <h1>W</h1>
+                            </div>
+
+                            <h3>Pengaturan Kerja yang Disesuaikan dengan Kebutuhan Anda</h3>
+                            <p>Mencari penghasilan tambahan atau perubahan karier? Kami menawarkan shift fleksibel – siang, malam, dan tengah malam, baik pendek maupun panjang. Pilih untuk melakukan kunjungan rumah, telehealth, atau kombinasi, sesuai yang terbaik untuk Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-about-detail">
+                        <div class="about-img">
+                            <img class="img-responsive" src="files/item3.jpg" alt="">
+                        </div>
+                        <div class="about-details">
+                            <div class="pentagon-text">
+                                <h1>E</h1>
+                            </div>
+                            <h3>Pengalaman dalam Praktik Umum Diperlukan</h3>
+                            <p>Berpikir tentang Praktik Umum tetapi ragu? Pekerjaan locum setelah jam kerja memungkinkan Anda merasakannya langsung dengan dukungan klinis, membantu Anda memutuskan apakah itu jalur yang tepat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of about section -->
+
+
+    <!-- service section starts here -->
+    <section class="service text-center" id="service">
+        <div class="container">
+            <div class="row">
+                <h2>Layanan Kami</h2>
+                <h4>Baik Anda sedang dalam pelatihan, kembali ke GP, atau beralih karier, kami akan memberikan dukungan untuk setiap shift yang Anda kerjakan.</h4>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-service">
+                        <div class="single-service-img">
+                            <div class="service-img">
+                                <img class="heart img-responsive" src="files/service1.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Opsi yang Dirancang Khusus untuk Anda</h3>
+                        <p>Dokter memiliki preferensi yang berbeda, begitu juga kami. Apakah Anda ingin shift telehealth pendek setelah jam kerja, blok telehealth 8 jam yang lebih panjang, atau lebih suka kami menangani transportasi dan peralatan sementara yang lain membawa sendiri – kami sangat fleksibel dan di sini untuk mendukung kebutuhan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-service">
+                        <div class="single-service-img">
+                            <div class="service-img">
+                                <img class="brain img-responsive" src="files/service2.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Layanan Kami Ditagih</h3>
+                        <p>Kami mengenakan biaya tambahan, yang berarti Anda mendapatkan lebih banyak. Dengan banyak pasien yang bersedia membayar untuk telehealth dan kunjungan rumah berkualitas, Anda bisa mendapatkan dua atau tiga kali lipat per pasien dengan Doctor Spharm dibandingkan layanan tagihan massal.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-service">
+                        <div class="single-service-img">
+                            <div class="service-img">
+                                <img class="knee img-responsive" src="files/service3.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Kepatuhan Kesehatan</h3>
+                        <p>Sementara beberapa layanan masih menggunakan proses kesehatan yang ketinggalan zaman yang wajar menimbulkan kekhawatiran, aplikasi kami menyederhanakan kepatuhan. Ini memungkinkan Anda melakukan triase pasien sendiri, mendokumentasikan secara menyeluruh, dan memilih kode kesehatan yang tepat dengan mudah dan efisien.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-service">
+                        <div class="single-service-img">
+                            <div class="service-img">
+                                <img class="bone img-responsive" src="files/service4.png" alt="">
+                            </div>
+                        </div>
+                        <h3>Kontrol atas Shift Anda</h3>
+                        <p>Untuk setiap shift, Anda memutuskan apakah akan melakukan kunjungan rumah, telehealth, atau keduanya, waktu mulai dan selesai, jumlah pasien yang akan Anda temui, dan wilayah yang akan Anda layani. Anda bahkan bisa menyesuaikan ini selama shift, sehingga Anda selalu memegang kendali dan selesai tepat waktu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of service section -->
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="team-heading text-center">
+                    <h2>Tim Kami</h2>
+                    <h4>Selama setiap shift, seorang Fellow GP senior hanya berjarak satu panggilan telepon, kapan pun Anda membutuhkannya.</h4>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member1.jpg" alt="member-1">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Budi Santoso, MBBS</h3>
+                        <p>Dokter Umum berdedikasi dengan semangat menyediakan layanan kesehatan yang mudah diakses melalui layanan setelah jam kerja yang inovatif.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Citra Dewi, MD</h3>
+                        <p>Berpengalaman dalam telehealth dan kunjungan rumah, berkomitmen memberikan perawatan berkualitas tinggi dalam lingkungan yang nyaman bagi pasien.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member2.jpg" alt="member-2">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member3.jpg" alt="member-3">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Rizky Pratama, DNB</h3>
+                        <p>Berfokus pada pemanfaatan teknologi untuk meningkatkan perawatan pasien dan memberikan bantuan medis tepat waktu selama setelah jam kerja.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Siti Rahayu, MBBS</h3>
+                        <p>Berkomitmen mendukung sesama GP dan memastikan perawatan pasien yang mulus selama setiap shift setelah jam kerja.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member4.jpg" alt="member-4">
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person">
+                        <img class="img-responsive" src="files/member5.jpg" alt="member-5">
+                    </div>
+                    <div class="person-detail">
+                        <div class="arrow-bottom"></div>
+                        <h3>Dr. Adi Nugroho, MD</h3>
+                        <p>Percaya dalam menyediakan peluang fleksibel dan bermanfaat bagi GP untuk memberikan layanan medis penting setelah jam kerja.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 single-member col-sm-4">
+                    <div class="person-detail">
+                        <div class="arrow-top"></div>
+                        <h3>Dr. Laila Fitri, MBBS</h3>
+                        <p>Bersemangat membuat layanan kesehatan berkualitas dapat diakses oleh pasien saat mereka paling membutuhkannya, melalui kunjungan rumah dan telehealth.</p>
+                    </div>
+                    <div class="person">
+                        <img class="img-responsive" src="files/member6.jpg" alt="member-5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map section -->
+    <div class="api-map" id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 map" id="map"></div>
+            </div>
+        </div>
+    </div><!-- end of map section -->
+
+    <!-- contact section starts here -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-caption clearfix">
+                    <div class="col-md-8 col-md-offset-1 contact-form">
+                        <h3>Siap untuk langkah berikutnya atau punya pertanyaan? Mari kita ngobrol!</h3>
+
+                        <form class="form" id="ajax-contact">
+                            <input class="name" type="text" placeholder="Nama" required>
+                            <input class="email" type="email" placeholder="Email" required>
+                            <input class="phone" type="text" placeholder="Nomor Telepon:" required>
+                            
+                            <select class="form-control" id="doctor-type" required>
+                                <option value="" disabled selected>Apa jenis dokter Anda?</option>
+                                <option value="1">Fellow GP / VR-GP</option>
+                                <option value="2">Registrar GP / AGPT</option>
+                                <option value="3">Petugas Medis (PGY1 atau 2)</option>
+                            </select>
+                            <br>
+                            <select class="form-control" id="doctor-type" required>
+                                <option value="" disabled selected>Shift apa yang Anda cari?</option>
+                                <option value="1">Kunjungan Rumah</option>
+                                <option value="2">Telehealth</option>
+                            </select>
+                            <br>
+                            <textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="Pesan"></textarea>
+                            <input class="submit-btn" type="submit" value="KIRIM">
+                        </form>
+                        <script>
+                            document.getElementById("ajax-contact").addEventListener("submit", function (e) {
+                               e.preventDefault();
+                            
+                               document.getElementById("ajax-contact").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+                            
+                               setTimeout(() => {
+                                  document.getElementById("ajax-contact").innerHTML = '<p style="font-size: 18px; color:white; font-weight: 700; text-align: center;">Terima kasih telah memesan janji temu dengan Doctor Spharm. Kami akan segera mengkonfirmasi janji Anda melalui pesan teks.</p>';
+                               }, 2000);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- end of contact section -->
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="heading">
+                <h2 style="text-align: center;">Pertanyaan yang Sering Diajukan</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="faq-accordion">
+                        <div class="faq-item active">
+                            <h3>Jenis waktu kerja apa yang tersedia di Doctor Spharm?</h3>
+                            <div class="faq-content" style="display: block;">
+                                <p>Doctor Spharm menyediakan berbagai opsi fleksibel, mulai dari perawatan rumah langsung hingga sesi telehealth jarak jauh, atau kombinasi keduanya. Anda bisa memilih shift siang, malam, atau tengah malam di berbagai lokasi.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Berapa banyak yang bisa saya dapatkan dengan Doctor Spharm?</h3>
+                            <div class="faq-content">
+                                <p>Tingkatkan penghasilan Anda secara signifikan dibandingkan layanan standar! Dapatkan hingga IDR 2,618,000 untuk setiap kunjungan rumah dan IDR 1,496,000 per janji telehealth. Pendekatan penagihan pribadi kami biasanya menggandakan atau melipatgandakan apa yang akan Anda dapatkan dengan tagihan massal.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Dukungan apa yang ditawarkan selama saya bekerja?</h3>
+                            <div class="faq-content">
+                                <p>Anda tidak pernah sendirian. GP senior kami yang berpengalaman tersedia 24/7 melalui telepon untuk dukungan. Selain itu, kami bisa membantu dengan peralatan yang diperlukan, transportasi, dan sopir, tergantung pada kebutuhan Anda.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Apakah saya bisa mengatur jadwal kerja saya sendiri?</h3>
+                            <div class="faq-content">
+                                <p>Tentu saja! Platform kami yang ramah pengguna memungkinkan Anda menentukan waktu shift yang Anda inginkan, jumlah pasien yang akan Anda temui, wilayah yang ingin Anda layani, dan apakah Anda ingin melakukan kunjungan rumah, telehealth, atau keduanya.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Kualifikasi apa yang saya butuhkan untuk bergabung?</h3>
+                            <div class="faq-content">
+                                <p>Anda memerlukan lisensi medis yang masih berlaku. Kami menyambut baik GP berpengalaman maupun yang baru dalam perawatan setelah jam kerja, dan kami menawarkan pelatihan jika Anda membutuhkannya.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-item">
+                            <h3>Bagaimana proses pembayaran bekerja?</h3>
+                            <div class="faq-content">
+                                <p>Sistem penagihan pribadi kami yang patuh, yang mencakup biaya tambahan, memastikan pendapatan yang lebih baik tanpa upcoding yang rumit. Anda memiliki kendali penuh atas keputusan penagihan Anda.</p>
+                            </div>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts here -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 footer-para">
+                    <p>© Doctor Spharm 2025. Semua hak dilindungi</p>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <p>
+                        Nomor Perusahaan: 00943935 <br>
+                        Alamat: Lime St, London EC3M 7HR, UK <br>
+                        Nomor Telepon: 01632 960189 <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 footer-para-2">
+                    <a href="about.html">Tentang Kami</a>
+                    <a href="contact.html">Hubungi Kami</a>
+                    <a href="terms.html">Syarat dan Ketentuan</a>
+                    <a href="privacy.html">Kebijakan Privasi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script tags
+    ============================================================= -->
+    <script>
+        function goToForm() {
+          const form = document.getElementById('ajax-contact');
+          if (form) {
+            form.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+    </script>
+
+    <script src="files/jquery-2.1.1.js"></script>
+    <script src="files/smoothscroll.js"></script>
+    <script src="files/bootstrap.min.js"></script>
+    <script src="files/custom.js"></script>
+</body>
+</html>
